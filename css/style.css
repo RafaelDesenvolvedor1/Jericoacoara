@@ -1,0 +1,381 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open sans',sans-serif;
+}
+html,body{height: 100%;}
+li{list-style: none;}
+a{text-decoration: none; opacity: 1;}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.btn{display: none; border: none; background-color:transparent; color: black; outline: none;}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    align-items: center;
+    
+}
+
+section{overflow: hiden;}
+
+.logo{
+    margin:10px;
+    margin-left: 25px;
+    font-family: 'Marck Script', cursive;
+    font-size: 1.5em;
+    color: rgb(48, 240, 208);
+
+}
+
+#index{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/background2.jpg);
+    background-position: center center;
+    background-size: cover;
+
+
+}
+
+#index .title{
+    font-size: 3em;
+    text-align: center;
+}
+
+#index .subtitle{
+ 
+    margin: 30px;
+   
+}
+
+.title,#index .subtitle{
+    color:white;
+    
+}
+
+#index button{
+    padding: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+}
+
+#sobre{
+    width: 100%;
+    height: 100%;
+    background-color:#C7AB5B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+#sobre .title{
+    text-align: center;
+    font-size: 2em;
+   line-height: 60px;
+ 
+}
+
+#sobre p{
+    margin:8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#sobre hr{
+    width:100px;
+    background-color: white;
+    height:2px;
+    border:none;
+    margin-top:15px;
+   
+}
+
+#praia,#clima{
+    width:100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color: #D4B45D;
+}
+
+#praia .title,#clima .title{
+    color: black;
+    font-size: 2em;
+    text-align: center;
+   
+}
+#praia p,#clima p{
+    margin:20px;
+}
+
+
+#praia hr,#clima hr{
+    width:100px;
+    background-color: black;
+    height:2px;
+    border:none;
+   margin-bottom: 70px;
+   margin-top: 50px;
+   
+}
+
+.galery img{
+    width: auto;
+    height:250px ;
+    
+    
+}
+
+
+
+.galery{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#turismo{
+    width:100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #D4B45D;
+    justify-content: center;
+   
+}
+
+#turismo .title{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+   
+}
+#turismo p{
+    margin:20px;
+    color: white;
+}
+
+
+#turismo hr{
+    width:100px;
+    background-color:white;
+    height:2px;
+    border:none;
+   margin-bottom: 70px;
+   margin-top: 50px;
+   
+}
+
+
+#praia{
+    height: auto;
+    
+}
+
+#praia strong{
+   font-style: italic;
+   font-size: 1.2em;
+}
+
+#localizado{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #5D77D4;
+    justify-content: center;
+    padding-bottom: 50px;
+   
+}
+
+#localizado .title{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+   
+}
+#localizado p{
+    margin:20px;
+    color: white;
+}
+
+
+#localizado hr{
+    width:100px;
+    background-color:white;
+    height:2px;
+    border:none;
+   margin-bottom: 70px;
+   margin-top: 50px;
+   
+}
+
+#localizado img{
+    width: auto;
+    height: 300px;
+}
+
+footer{
+    width:100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #2E4187;
+    justify-content: center;
+    
+   
+}
+
+footer .title{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+   
+}
+
+footer hr{
+    width:100px;
+    background-color:white;
+    height:2px;
+    border:none;
+   margin-bottom: 70px;
+   
+   
+}
+
+#contatos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contatos li{
+    font-size: 2rem;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.assin{
+    font-size: 0.6em;
+    color: white;
+    font-family: sans-serif;
+    text-align: left;
+    width: 100%;
+}
+
+
+
+@media(max-width:1199px){
+    .btn{display: block;}
+    .menu{
+        position: fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        background-color:rgba(225,225,225,0.9);
+        text-align: center;
+        z-index: 1;
+        display: none;
+    }
+
+    .menu li{
+       padding: 20px;
+       font-size: 1.5em;
+      
+       
+    }
+
+    .menu li:nth-child(2){
+        margin-top:70px;
+
+    }
+
+     .btn{
+        color:black;
+        float: right;
+        margin: 5px;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .menu li a{
+        color:Black;
+    
+    }
+
+  
+
+    .galery{
+        flex-direction: column;
+    }
+
+    .galery img{
+        margin:20px;
+    }
+
+
+}
+
+@media(min-width:1200px){
+    .menu{
+       /* display: block !important;*/
+        display: flex !important;
+       
+    }
+
+    .menu li{
+        margin: 10px;
+        
+    }
+    .menu li:last-child{
+        margin-right: 20px;
+        
+    }
+    .menu li a{color: black;}
+    img{
+        margin:20px
+    }
+
+    .galery{
+        justify-content: space-around;
+    }
+
+    #sobre p,#clima p, #turismo p{
+        margin: 30px;
+    }
+}
